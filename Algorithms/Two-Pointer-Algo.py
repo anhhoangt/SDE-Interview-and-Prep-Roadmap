@@ -116,3 +116,40 @@ def maxArea(self, height: List[int]) -> int:
             else:
                 right -= 1
         return maxArea
+
+
+
+'''
+LeetCode 186: Reverse Words in a String II.
+Problem
+
+You are given a character array s representing a string.
+
+Words are separated by a single space.
+
+You must reverse the order of the words in-place.
+'''
+    def reverseWords(self, s: list[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+
+        # Helper: reverse a portion of the list in-place
+        def reverse(l, r):
+            while l < r:
+                s[l], s[r] = s[r], s[l]
+                l += 1
+                r -= 1
+
+        n = len(s)
+
+        # Step 1: reverse the whole string
+        reverse(0, n - 1)
+
+        # Step 2: reverse each word individually
+        start = 0
+        for i in range(n + 1):  # +1 to handle the last word
+            if i == n or s[i] == " ":  # word boundary
+                reverse(start, i - 1)
+                start = i + 1
+
