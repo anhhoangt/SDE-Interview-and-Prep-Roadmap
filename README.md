@@ -564,4 +564,4 @@ Contributions are welcome! If you have suggestions for improving the roadmap, ad
 This roadmap is intended as a general guideline and may not cover every aspect of SDE interviews. It's essential to supplement my preparation with additional resources and adapt based on individual needs and experiences.
 
 ## <span style="color:darkolivegreen;">**Credits**</span>
-This project is inspired by various interview preparation resources and the collective wisdom of the developer community..
+This project is inspired by various interview preparation resources and the collective wisdom of the developer community....
