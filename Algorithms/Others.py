@@ -12,7 +12,7 @@ Output: "AB"
 
 Input: 701
 Output: "ZY"
-...........
+..............
 '''
 
 def convertToTitle(self, columnNumber: int) -> str:
